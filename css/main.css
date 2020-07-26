@@ -1,0 +1,237 @@
+h1{
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #007556;
+
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #007556;
+    
+}
+
+p {
+        font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #007556;
+}
+
+button {
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: #007556;
+    padding: 15px;  
+}
+
+
+
+
+
+
+
+.content{
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-rows: 150px 500px 500px 200px 300px 200px 300px;
+    grid-template-areas: 
+        "header header header" 
+        "navigation heroText heroText"
+        "navigation daveHead aboutMe"
+        "navigation space space"
+        "navigation skillsTools skillsTools"
+        "navigation spaceMyWork spaceMyWork"
+        "navigation myWork myWork"
+        
+        
+}
+
+.header{
+    display: inline-block;
+    align-content: center;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-area: header;
+}
+
+.logo{
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.navigation{
+    width: 300px;
+    float: left;
+    height: 3600px;
+    margin-left: auto;
+    grid-area: navigation;
+    position: sticky;
+}
+
+.navigation ul{
+    list-style-type: none;
+}
+
+.navItems{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #007556;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 72px;
+    position: sticky;
+    top: 400px;   
+
+}
+
+.heroText{
+    grid-area: heroText;
+    padding: 20px;
+    height: 400px;
+    
+    
+}
+
+.daveHead{
+    grid-area: daveHead;
+    padding-left: 50px; 
+    width: 200px;
+    
+}
+
+.aboutMe{
+    padding-top: 20px;
+    padding-right: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #007556;
+    font-size: 16px;
+    grid-area: aboutMe;
+    width: 500px;
+}
+
+.space{
+    grid-area: space;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.skillsTools {
+    display: flex;
+    flex-direction: col;
+    grid-area: skillsTools;
+    height: 200px;
+    width: auto;  
+}
+
+.skillButton {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 15px;
+    border: none;
+    height: 200px;
+    width: 200px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #007556;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.spaceMyWork {
+    grid-area: spaceMyWork;
+    height: 200px;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.myWork {
+    grid-area: myWork;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    
+}
+
+.projectDescription {
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 100;
+    padding: 15px;
+}
+
+#viewProject {
+    border: 2px black;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #007556;
+    border-radius: 10px;
+    
+    
+}
+  
+
+@media only screen and (max-width: 600px){
+    
+.content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 500px 250px 200px 150px 500px 150px 500px;
+    grid-template-areas: 
+        "header"
+        "heroText"
+        "aboutMe"
+        "daveHead"
+        "space"
+        "skillsTools"
+        "spaceMyWork"
+        "myWork"
+}
+    
+.skillsTools {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: stretch;
+    padding: 50px;
+}
+
+.myWork {
+    grid-area: myWork;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    
+}
+
+ 
+
+
+
+}
+
+
+
+
+
