@@ -19,7 +19,10 @@ p {
     font-weight: 100;
     font-size: 14px;
     color: #007556;
+    text-align: left;
 }
+
+
 
 button {
 
@@ -39,7 +42,7 @@ button {
 .content{
     display: grid;
     grid-template-columns: 300px 1fr 1fr;
-    grid-template-rows: 150px 500px 500px 200px 300px 200px 300px;
+    grid-template-rows: 150px 500px 500px 200px 600px 200px 300px;
     grid-template-areas: 
         "header header header" 
         "navigation heroText heroText"
@@ -141,12 +144,10 @@ button {
 }
 
 .skillButton {
-    display: flex;
-    justify-content: space-between;
     padding: 30px;
     margin: 15px;
     border: none;
-    height: 200px;
+    height: 500px;
     width: 200px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -157,6 +158,7 @@ button {
     color: white;
     text-align: center;
     border-radius: 10px;
+    position: relative top 5px;
 }
 
 .spaceMyWork {
@@ -190,7 +192,21 @@ button {
     
     
 }
-  
+
+.skillsList{
+    margin-top: -30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    color: #007556;
+    list-style-type: none;
+    margin-left: -30px;
+    text-align: left;
+    line-height: 20px
+ 
+    
+
+}
 
 @media only screen and (max-width: 600px){
     
@@ -227,9 +243,15 @@ button {
 
  
 
+    
+
+    
+
+    
+    
 
 
-}
+
 
 
 
